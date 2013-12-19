@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.MapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    map:cameraTargetLat="55.8580"
+    map:cameraTargetLng="-4.2590"
+    map:cameraTilt="0"
+    map:cameraZoom="7" >
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:id="@+id/diaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:text="Diary + "
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="200dp" />
+
+    <EditText
+        android:id="@+id/lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="400dp"
+        android:hint="Longitude"
+        android:inputType="text"
+        android:maxLength="15"
+        android:maxLines="1" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="350dp"
+        android:hint="Latitude"
+        android:inputType="text"
+        android:maxLength="15"
+        android:maxLines="1" >
+    </EditText>
+
+    <Button
+        android:id="@+id/posButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="450dp" />
+
+    <Spinner
+        android:id="@+id/PlaceSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+
+</fragment>
